@@ -1,0 +1,49 @@
+.navbar {
+    background: linear-gradient(to right, white, #ffcccb, pink);
+    padding: 1rem;
+    position: sticky; /* This makes the navbar sticky */
+    top: 0; /* Stick the navbar to the top */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:  pink;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-logo-img {
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 150px;
+}
+
+.navbar-item {
+    margin-left: 7rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #ddd;
+}

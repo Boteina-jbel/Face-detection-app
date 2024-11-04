@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../UploadImage.css'
 
 const UploadImage = () => {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState(null);
+  const [fileName, setFileName] = useState("No file selected");
 
   const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
+    const selectedFile = e.target.files[0];
+    setFile(selectedFile);
+    setFileName(selectedFile ? selectedFile.name : "No file selected");
   };
 
   const handleSubmit = async () => {
     const formData = new FormData();
     formData.append('file', file);
-
     try {
       const response = await axios.post('http://localhost:5000/upload', formData);
       setResult(response.data);
@@ -22,21 +25,22 @@ const UploadImage = () => {
   };
 
   return (
-    <div>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleSubmit} class="btn" type="button">
-          <strong>Upload</strong>
-          <div id="container-stars">
-              <div id="stars"></div>
-          </div>
-
-          <div id="glow">
-              <div class="circle"></div>
-              <div class="circle"></div>
-          </div>
+    <div className="input-container">
+      <label className="styled-input">
+        Browse
+        <input type="file" onChange={handleFileChange} />
+      </label>
+      <span id="file-name">{fileName}</span>
+      <button onClick={handleSubmit} className="btn" type="button">
+        <strong>Upload</strong>
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+        <div id="glow">
+          <div className="circle"></div>
+          <div className="circle"></div>
+        </div>
       </button>
-
-
       {result && (
         <div>
           <h2>Analysis Result</h2>

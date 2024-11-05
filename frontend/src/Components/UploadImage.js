@@ -5,7 +5,7 @@ import '../UploadImage.css'
 const UploadImage = () => {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState(null);
-  const [fileName, setFileName] = useState("No file selected");
+  const [fileName, setFileName] = useState(null);
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -26,12 +26,15 @@ const UploadImage = () => {
 
   return (
     <div className="input-container">
-      <label className="styled-input">
-        Browse
-        <input type="file" onChange={handleFileChange} />
-      </label>
-      <span id="file-name">{fileName}</span>
-      <button onClick={handleSubmit} className="btn" type="button">
+
+      <div className="input-container">
+        <label className="input-label">Picture</label>
+        <label htmlFor="picture" className="custom-file-label">Choose File</label>
+        <input id="picture" type="file" className="input-file" onChange={handleFileChange}/>
+        <span id="file-name">{fileName}</span>
+      </div>
+
+      <button onClick={handleSubmit} className="btn" type="button" id="btn">
         <strong>Upload</strong>
         <div id="container-stars">
           <div id="stars"></div>

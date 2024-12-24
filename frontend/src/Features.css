@@ -1,0 +1,12 @@
+.features{
+    padding: 50px;
+    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    background-blend-mode: multiply;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    width: 100%;
+    padding: 100px 20px;
+
+}

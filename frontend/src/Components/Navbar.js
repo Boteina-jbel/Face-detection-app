@@ -15,7 +15,7 @@ class Navbar extends Component {
                             <a href="/" className="navbar-link">Home</a>
                         </li>
                         <li className="navbar-item">
-                            <a href="/about" className="navbar-link">About</a>
+                            <a href="#Features" className="navbar-link">Features</a>
                         </li>
                         <li className="navbar-item">
                             <a href="/services" className="navbar-link">Services</a>

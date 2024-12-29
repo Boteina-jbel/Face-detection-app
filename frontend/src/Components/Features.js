@@ -4,7 +4,7 @@ import '../Features.css';
 
 const Features = () => {
     return (
-        <div className="features">
+        <div className="features" id="Features">
             <h2>What Makes Our App Exceptional ?</h2>
 
                 <div class="parent-card">

@@ -7,8 +7,8 @@ class Navbar extends Component {
             <nav className="navbar">
                 <div className="navbar-container">
                     <a href="/" className="navbar-logo">
-                        <img src="/logo-bety.png" alt="Logo" className="navbar-logo-img" />
-                        BETI-I
+                        <img src="/SkinSight_smalll.png" alt="Logo" className="navbar-logo-img" />
+                        SkinSight
                     </a>
                     <ul className="navbar-menu">
                         <li className="navbar-item">

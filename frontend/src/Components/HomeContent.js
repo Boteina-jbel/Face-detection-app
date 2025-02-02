@@ -6,7 +6,7 @@ class HomeContent extends Component {
         return (
             <div className="home-content">
                 <div className="text-content">
-                    <h2>Reimagine Medicine</h2>
+                    <h2>Scan Your Skin, Unlock Your Glow</h2>
                     <p>Use our powerful AI technology to scan, analyze, and detect skin imperfections.
                         Get instant, personalized recommendations for products and treatments tailored to
                         your unique skin needs. Experience the future of skincare today—quick, accurate, and

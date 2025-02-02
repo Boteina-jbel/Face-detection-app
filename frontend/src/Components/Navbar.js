@@ -24,6 +24,9 @@ class Navbar extends Component {
                             <a href="/contact" className="navbar-link">Contact</a>
                         </li>
                         <li className="navbar-item">
+                            <a href="/start" className="navbar-link">Start</a>
+                        </li>
+                        <li className="navbar-item">
                             <a href="/upload" className="navbar-link">Start</a>
                         </li>
                         <li className="navbar-item">

@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Home from './Routes/Home';
 import UploadImage from './Components/UploadImage';
 import CameraCapture from './Components/CameraCapture';
+import Start from './Components/Start';
 import './app.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/start" element={<Start />} />
         <Route path="/upload" element={<UploadImage />} />
         <Route path="/camera" element={<CameraCapture />} />
       </Routes>

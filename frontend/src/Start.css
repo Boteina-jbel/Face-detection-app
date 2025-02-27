@@ -1,0 +1,20 @@
+.start-content {
+    background: linear-gradient(to right, white, #ffcccb, #ffc0cb);
+    min-height: 90vh; /* Ensures it covers the full viewport height */
+    display: flex;
+}
+
+.pentagon-image {
+    width: 730px;
+    height: 630px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    object-fit: cover;
+    transform: rotate(15deg);
+    margin-top: -30px;
+    margin-left: -100px;
+    transition: transform 0.5s ease-in-out; /* Move transition here */
+}
+
+.pentagon-image:hover {
+    transform: rotate(0deg); /* Change rotation */
+}

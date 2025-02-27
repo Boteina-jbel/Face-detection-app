@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
+      <Routes className="home-content">
         <Route path="/" element={<Home />} />
         <Route path="/start" element={<Start />} />
         <Route path="/upload" element={<UploadImage />} />

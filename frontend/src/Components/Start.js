@@ -4,8 +4,10 @@ import '../Start.css'
 class Start extends Component {
     render() {
         return (
-           <div>
-            <h2>hello world</h2>
+           <div className="start-content">
+                <div className="">
+                        <img src="/selfie-bathroom.jpg" alt="a women picking up a phone" class="pentagon-image" />   
+                </div>
            </div>       
         );
     }

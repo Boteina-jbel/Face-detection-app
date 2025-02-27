@@ -4,17 +4,29 @@
     display: flex;
 }
 
+/*styling the image*/
 .pentagon-image {
     width: 730px;
     height: 630px;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     object-fit: cover;
-    transform: rotate(15deg);
-    margin-top: -30px;
+    margin-top: -10px;
     margin-left: -100px;
-    transition: transform 0.5s ease-in-out; /* Move transition here */
+    animation: floating 5s ease-in-out infinite;
+
 }
 
-.pentagon-image:hover {
-    transform: rotate(0deg); /* Change rotation */
+@keyframes floating {
+    0% {
+        transform: translateY(0px) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(5px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(-2deg);
+    }
 }
+
+/*styling the content*/
+

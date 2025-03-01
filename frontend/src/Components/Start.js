@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../Start.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 class Start extends Component {
     render() {

@@ -6,12 +6,12 @@ class Home extends Component{
     render(){
         return(
             <div>
-            {/* Première section */}
-            <HomeContent />
+                {/* Première section */}
+                <HomeContent />
 
-            {/* Deuxième section */}
-            <Features />
-        </div>
+                {/* Deuxième section */}
+                <Features />
+            </div>
         )
     }
 }

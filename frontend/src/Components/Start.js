@@ -17,7 +17,7 @@ class Start extends Component {
                             <div className="step-number">1</div>
                             <h3>SNAP YOUR SELFIE</h3>
                             <p>If you're ready for your best skin day, use our AI to perform your facial skin analysis from just 1 selfie</p>
-                            <i className="fas fa-user-circle icon"></i>
+                            <i className="fas fa-face-smile icon"></i>
                         </div>
 
                         {/* Step 2 */}

@@ -1,5 +1,7 @@
 .home-content{
   background: linear-gradient(to right, white, #ffcccb, #ffc0cb);
+  min-height: 80vh; /* Ensures it covers the full viewport height */
+  display: flex;
 }
   
 .text-content {

@@ -40,9 +40,12 @@ const Start = () => {
                         
         </div>
       
-        <button className="sticky-bottom-button" onClick={() => navigate("/start")}>
-            GET STARTED
-        </button>
+        {/* Sticky Bottom Bar */}
+        <div className="sticky-bottom-bar">
+            <button className="sticky-button" onClick={() => navigate("/upload")}>
+                GET STARTED
+            </button>
+        </div>
     </div>
   );
 };

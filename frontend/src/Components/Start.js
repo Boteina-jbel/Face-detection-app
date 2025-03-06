@@ -42,7 +42,7 @@ const Start = () => {
       
         {/* Sticky Bottom Bar */}
         <div className="sticky-bottom-bar">
-            <button className="sticky-button" onClick={() => navigate("/upload")}>
+            <button className="sticky-button" onClick={() => navigate("/guidelines")}>
                 GET STARTED
             </button>
         </div>

@@ -1,0 +1,42 @@
+/* Centers the whole component in the middle of the page */
+.selfieGuidelines-container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;            /* Full viewport height */
+    width: 100vw;             /* Full viewport width */
+    margin-top: -60px;
+}
+
+/* Styles the content box */
+.selfieGuidlines-content {
+    text-align: center;        /* Centers text inside */
+    margin-top: -60px;
+}
+
+.selfieGuidlines-content p{
+    color: rgb(146, 128, 143);
+    font-size: 30px;
+}
+
+.selfieGuidlines-content ul{
+    color: rgb(146, 128, 143);
+    font-size: 20px;
+}
+
+.button{
+    background-color: #ffc0cb; /* Pink button */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border: none;
+    border-radius: 10px; /* Rounded button */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 20px;
+}

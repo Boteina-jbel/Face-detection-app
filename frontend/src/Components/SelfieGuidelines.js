@@ -12,8 +12,8 @@ const SelfieGuidelines = () => {
                     <li>Use the front-facing camera and minimize shadows</li>
                     <li>Center entire face and have a neutral expression</li>
                 </ul>
-                <button className="button">GET STARTED</button>
-                <button className="button">GET STARTED</button>
+                <button className="button">TAKE SELFIE</button>
+                <button className="button">UPLOAD SELFIE</button>
             </div>
         </div>
     );

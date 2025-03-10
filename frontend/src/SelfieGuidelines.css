@@ -9,17 +9,17 @@
 }
 
 /* Styles the content box */
-.selfieGuidlines-content {
+.selfieGuidelines-content {
     text-align: center;        /* Centers text inside */
     margin-top: -60px;
 }
 
-.selfieGuidlines-content p{
+.selfieGuidelines-content p{
     color: rgb(146, 128, 143);
     font-size: 30px;
 }
 
-.selfieGuidlines-content ul{
+.selfieGuidelines-content ul{
     color: rgb(146, 128, 143);
     font-size: 20px;
 }

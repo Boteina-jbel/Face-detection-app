@@ -6,6 +6,7 @@ import UploadImage from './Components/UploadImage';
 import CameraCapture from './Components/CameraCapture';
 import Start from './Components/Start';
 import SelfieGuidelines from './Components/SelfieGuidelines';
+import Result from './Components/Result';
 import './app.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/upload" element={<UploadImage />} />
           <Route path="/camera" element={<CameraCapture />} />
           <Route path="/guidelines" element={<SelfieGuidelines />} />
+          <Route path="/result" element={<Result />} />
         </Routes>
       </div>
     </Router>

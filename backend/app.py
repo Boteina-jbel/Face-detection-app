@@ -34,6 +34,9 @@ def preprocess_image(image_path):
     image = image / 255.0
     return np.expand_dims(image, axis=0)
 
+@app.route('/result')
+def result_page():
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/guidelines')
 def guidelines_page():

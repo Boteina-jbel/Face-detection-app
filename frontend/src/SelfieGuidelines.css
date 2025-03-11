@@ -3,26 +3,39 @@
     display: flex;
     justify-content: center;  /* Centers horizontally */
     align-items: center;      /* Centers vertically */
-    height: 100vh;            /* Full viewport height */
-    width: 100vw;             /* Full viewport width */
-    margin-top: -60px;
+    height: 90vh;            /* Full viewport height */
+    width: 90vw;             /* Full viewport width */
+    margin-top: -40px;
+    margin-left: 30px;
 }
 
 /* Styles the content box */
 .selfieGuidelines-content {
     text-align: center;        /* Centers text inside */
-    margin-top: -60px;
+    margin-top: -30px;
+    margin-left: 30px;
 }
-
+.selfieGuidelines-content h2{
+    margin-left: 176px;
+}
 .selfieGuidelines-content p{
     color: rgb(146, 128, 143);
     font-size: 30px;
+    margin-right: 20px;
 }
 
 .selfieGuidelines-content ul{
     color: rgb(146, 128, 143);
     font-size: 20px;
+    list-style-position: inside; /* Keeps the bullets slightly separated */
+    padding-left: 15px; /* Reduce this value gradually if needed */
+    margin-right: 40px;
 }
+
+.selfieGuidelines-content li {
+    padding-left: 5px; /* Moves text slightly closer to the bullet */
+}
+
 
 .button{
     background-color: #ffc0cb; /* Pink button */
@@ -39,4 +52,17 @@
     height: 60px;
     margin-top: 50px;
     margin-left: 20px;
+}
+.btnn{
+    background-color: #9bc788; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 60px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }

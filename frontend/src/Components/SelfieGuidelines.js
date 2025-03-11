@@ -44,31 +44,26 @@ const SelfieGuidelines = () => {
             <li>Center entire face and have a neutral expression</li>
             </ul>
 
-            <button className="button">TAKE SELFIE</button>
+                  <button className="button">TAKE SELFIE</button>
+                  {/* Hidden file input */}
+                  <input
+                      type="file"
+                      ref={fileInputRef}
+                      className="input-file"
+                      onChange={handleFileChange}
+                      style={{ display: "none" }}
+                  />
 
-            <div className="upload-container">
-                {/* Hidden file input */}
-                <input
-                    type="file"
-                    ref={fileInputRef}
-                    className="input-file"
-                    onChange={handleFileChange}
-                    style={{ display: "none" }}
-                />
+                  {/* Button that triggers file input */}
+                  <button onClick={handleUploadClick} className="button">
+                      CHOOSE FILE
+                  </button>
 
-                {/* Button that triggers file input */}
-                <button onClick={handleUploadClick} className="button">
-                    CHOOSE FILE
-                </button>
-
-                {/* Upload button (shown only after file selection) */}
-                {file && (
-                    <button onClick={handleSubmit} className="button">
-                    UPLOAD SELFIE
-                    </button>
-                )}
-            </div>
-        </div>
+                  {/* Upload button (shown only after file selection) */}
+                  <button onClick={handleSubmit} className="btnn">
+                      UPLOAD ✔️
+                  </button>
+          </div>
     </div>
   );
 };

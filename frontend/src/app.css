@@ -1,3 +1,27 @@
 .home-content{
     background: linear-gradient(to right, white, #ffcccb, #ffc0cb);
   }
+
+  /* Ensures the page takes full height and the footer is at the bottom */
+html, body, #root, .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  background: linear-gradient(to right, white, #ffcccb, #ffc0cb);
+}
+
+.footer {
+  width: 100%;
+  background: white; /* Light pink to match your theme */
+  color: rgb(146, 128, 143);
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  height: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

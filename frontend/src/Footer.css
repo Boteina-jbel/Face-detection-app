@@ -1,0 +1,9 @@
+.footer {
+    width: 100%;
+    background: white; /* Light pink to match your theme */
+    color: rgb(146, 128, 143);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    height: 50px;
+}

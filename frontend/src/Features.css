@@ -1,6 +1,6 @@
 .features{
     padding: 50px;
-    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    background: white;
     background-blend-mode: multiply;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -8,8 +8,7 @@
     color: #333;
     width: 1500px;
     padding: 100px 20px;
-    margin-left: -25px;
-
+    margin-left: 8px;
 }
 
 h2 {

@@ -3,19 +3,22 @@
     padding: 1rem;
     position: sticky; /* This makes the navbar sticky */
     top: 0; /* Stick the navbar to the top */
+    z-index: 1000; /* Ensures the navbar stays above other elements like cards */
+    width: 100%;
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .navbar-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color:  pink;
+    color: pink;
     font-size: 2rem;
     font-weight: bold;
 }

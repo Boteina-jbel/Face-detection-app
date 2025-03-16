@@ -14,15 +14,4 @@ html, body, #root, .app-container {
   background: linear-gradient(to right, white, #ffcccb, #ffc0cb);
 }
 
-.footer {
-  width: 100%;
-  background: white; /* Light pink to match your theme */
-  color: rgb(146, 128, 143);
-  text-align: center;
-  padding: 5px 0;
-  font-size: 14px;
-  height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-}
+

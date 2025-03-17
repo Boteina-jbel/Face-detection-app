@@ -21,7 +21,7 @@ class Navbar extends Component {
                             <a href="/services" className="navbar-link">Services</a>
                         </li>
                         <li className="navbar-item">
-                            <a href="/contact" className="navbar-link">Contact</a>
+                            <a href="#Contact" className="navbar-link">Contact</a>
                         </li>
                         <li className="navbar-item">
                             <a href="/start" className="navbar-link">Start</a>

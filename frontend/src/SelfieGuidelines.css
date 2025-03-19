@@ -16,7 +16,9 @@
     margin-left: 30px;
 }
 .selfieGuidelines-content h2{
-    margin-left: 176px;
+    margin-left: 100px;
+    color: rgb(146, 128, 143);
+    font-size: 40px;
 }
 .selfieGuidelines-content p{
     color: rgb(146, 128, 143);

@@ -1,49 +1,42 @@
 .contact-section {
-    padding: 40px 20px;
-    text-align: left;
-    min-height: 75vh; /* Ensures it covers the full viewport height */
-  }
- .contact-section h2{
-   margin: 0;
+  padding: 40px 20px;
+  min-height: 75vh;
+}
+
+.contact-section h2 {
   font-size: 40px;
   color: rgb(146, 128, 143);    
   font-weight: 700;
   margin-bottom: 35px;
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 30px;
- }
+  text-align: center;
+}
 
 .contact-container {
   max-width: 1200px;
   margin: auto;
 }
 
-
-
-.con {
-  font-size: 1.5rem;
-  color: #555;
-}
-
 .contact-content {
   display: flex;
+  justify-content: center; /* Centers the form horizontally */
+  align-items: center;
   flex-direction: column;
   gap: 40px;
 }
 
-@media (min-width: 992px) {
-  .contact-content {
-    flex-direction: row;
-  }
-}
-
 .contact-form {
-  flex: 2;
+  width: 100%;
+  max-width: 800px; /* Controls input width */
+  text-align: center;
 }
 
 .contact-form p {
   margin-bottom: 10px;
+
+  font-size: 1.125rem; /* Slightly larger font size for the paragraph */
+  line-height: 1.6; /* Increase line height for better readability */
+  color: rgb(146, 128, 143); /* Darker text color */
+
 }
 
 .form-group {
@@ -58,32 +51,34 @@
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
+  box-sizing: border-box;
+  height: 60px;
 }
 
 .form-group textarea {
   height: 100px;
   resize: vertical;
+    border-radius: 10px;
 }
 
 .sticky-button {
-    background-color: #ffc0cb; /* Pink button */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 30px;
-    padding-right: 80px;
-    padding-left: 80px;
-    border: none;
-    border-radius: 10px; /* Rounded button */
-    cursor: pointer;
-    transition: background 0.3s ease;
-    height: 60px;
+  background-color: #ffc0cb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 60px;
+  width: 100%;
 }
 
 .sticky-button:hover {
-    background-color: #FFC0CB; /* Darker pink on hover */
-    transform: scale(1.05);
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFA6B9;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }

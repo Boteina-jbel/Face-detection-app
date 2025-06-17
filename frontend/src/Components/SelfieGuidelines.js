@@ -53,16 +53,28 @@ const SelfieGuidelines = () => {
                       onChange={handleFileChange}
                       style={{ display: "none" }}
                   />
+                  
+                  <p>Or:</p>
 
-                  {/* Button that triggers file input */}
+                  {/* Choose File button */}
                   <button onClick={handleUploadClick} className="button">
-                      CHOOSE FILE
+                    CHOOSE FILE
                   </button>
 
-                  {/* Upload button (shown only after file selection) */}
-                  <button onClick={handleSubmit} className="btnn">
+                  {/* Show selected file name */}
+                  {file && (
+                    <p style={{ marginTop: "10px", color: "gray", fontStyle: "italic" }}>
+                      Selected file: {file.name}
+                    </p>
+                  )}
+
+                  {/* Upload button (only visible after selecting a file) */}
+                  {file && (
+                    <button onClick={handleSubmit} className="btnn">
                       UPLOAD ✔️
-                  </button>
+                    </button>
+                  )}
+
           </div>
     </div>
   );

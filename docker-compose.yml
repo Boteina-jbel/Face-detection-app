@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: my-backend
+    container_name: backend_container
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+    networks:
+      - mynetwork
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: my-frontend
+    container_name: frontend_container
+    ports:
+      - "3000:80"  # Nginx inside container listens on 80
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
